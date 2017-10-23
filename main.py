@@ -3,7 +3,7 @@ from sys import exit
 from first_level import *
 
 
-
+""" # Broken for now
 def start_game():
     death_count = 0
     first_unlocked = True
@@ -42,5 +42,5 @@ def start_game():
 
         else:
             print("I don't understand...")
-
-start_game()
+"""
+start_level_first()
