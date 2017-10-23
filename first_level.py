@@ -224,4 +224,4 @@ def end():
     second_unlocked = True
     
 
-troll_lair()
+start_room_first()
