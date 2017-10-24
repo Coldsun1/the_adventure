@@ -45,7 +45,7 @@ def chest_room():
             print("As you push the door open you hear a click behind you.")
             print("As you turn around to investigate, you see a cannon drop from the ceiling.")
             print("BOOOM! You fly backwards through the door with a cannon shaped hole in your belly.")
-            dead("You recieved a cannon ball to the belly.")
+            dead("You recieved a cannon ball to the belly.", death_count)
 
         elif choice == 'walk south' or choice == 'south':
             print("The door opens to a deep chasm.")
@@ -72,7 +72,7 @@ def chest_room():
             print("You've already opened this...")
 
         else:
-            pass
+            print("I don't understand that...")
 
 
 def dance_party(map):
@@ -222,6 +222,4 @@ def end():
     print(space)
     print("Yay you won the first level.")
     second_unlocked = True
-    
-
-start_room_first()
+    start_game(True, True, False)

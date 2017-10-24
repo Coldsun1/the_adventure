@@ -1,32 +1,23 @@
 # The ADVENTURE!!!
 from sys import exit
+death_count = 0
+from extra import *
 from first_level import *
 
 
-""" # Broken for now
-def start_game():
-    death_count = 0
-    first_unlocked = True
-    second_unlocked = False
-    third_unlocked = False
-    
-    print("If you want to LEAVE the game at any point, press: CTRL-C.")
+
+
+def start_game(first_unlocked, second_unlocked, third_unlocked, death_count):
+    print(f"You've died {death_count} times.")
     print("Which level do you wish to play?")
     print("Level status: ")
+
     print(f"First Unlocked? {first_unlocked}")
     print(f"Second Unlocked? {second_unlocked}")
     print(f"Third Unlocked? {third_unlocked}")
 
 
     while True:
-        if second_unlocked == True:
-            break
-
-        elif third_unlocked == True:
-            break
-
-        else:
-            pass
 
         choice = input('> ')
         choice.lower()
@@ -42,5 +33,7 @@ def start_game():
 
         else:
             print("I don't understand...")
-"""
-start_level_first()
+
+print("If you want to LEAVE the game at any point, press: CTRL-C.")
+
+start_game(True, False, False, death_count)

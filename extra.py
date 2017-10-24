@@ -1,7 +1,8 @@
-def dead(reason):
+def dead(reason, death_count):
     print('')
     print(reason, "Rip in peace.")
-    death_count += 1
+    death_count = death_count + 1
+    start_game(True, False, False, )
     # "Rip in peace" = rip squared? idk...
 
 
